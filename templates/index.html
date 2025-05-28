@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham's Pet Shop</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../static/images/logosuman.png" alt="Pet Shop Logo" class="logo" style="height: 60px;"">
+        <h1>Welcome! to Soham's Pet Shop</h1>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Admin Login</a>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <section class="about-section">
+            <img src="../static/images/pet-care.jpg" alt="Pet Care" class="about-img">
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>Founded with love, we are more than just a pet shop. We are a family of pet lovers committed to providing top-quality products and services for your furry, feathery, and scaly friends.</p>
+            </div>
+        </section>
+
+        <section class="about-section reverse">
+            <img src="../static/images/pet-products.jpg" alt="Pet Products" class="about-img">
+            <div class="about-text">
+                <h2>Our Products</h2>
+                <p>From nutritious food to fun toys and comfy beds, we offer everything your pet needs for a happy and healthy life. Handpicked with care, because we treat your pets like our own.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <img src="../static/images/adoption.jpg" alt="Pet Adoption" class="about-img">
+            <div class="about-text">
+                <h2>Adopt, Don't Shop</h2>
+                <p>We believe in giving pets a second chance. Our adoption program connects loving families with pets in need of a forever home.</p>
+            </div>
+        </section>
+
+        <section class="about-section reverse">
+            <img src="../static/images/community.jpg" alt="Community" class="about-img">
+            <div class="about-text">
+                <h2>Our Community</h2>
+                <p>Join our community events, workshops, and training sessions to learn more about pet care and connect with fellow pet lovers.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <img src="../static/images/our-promise.jpg" alt="Our Promise" class="about-img">
+            <div class="about-text">
+                <h2>Our Promise</h2>
+                <p>We promise quality, care, and love for every pet. Visit us and experience a pet store that truly cares.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Soham's Pet Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+<style>
+    /* About Page Specific Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #ff5733, #ff914d);
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 12px 25px;
+    margin: 0 10px;
+    background: white;
+    color: #ff5733;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover, nav .active {
+    background: #ff5733;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* About Page Layout */
+.about-container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-img {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.about-text h2 {
+    color: #ff5733;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #ff5733;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+</style>
+
+</html>

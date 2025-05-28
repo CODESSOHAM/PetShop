@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #ff5733, #ff914d);
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #fff;
+    color: #ff5733;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    background: #ff5733;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Pet Gallery */
+.pet-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.pet-gallery img {
+    width: 220px;
+    height: auto;
+    margin: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pet-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Shop Container */
+.shop-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    border: 2px solid #ff5733;
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background: #ffebd5;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.category img {
+    border-radius: 8px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5733;
+    box-shadow: 0px 0px 5px rgba(255, 87, 51, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    background: linear-gradient(90deg, #ff5733, #ff914d);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #e04e29, #ff6b42);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+nav a:hover, nav .active {
+    background: #ff5733;
+    color: white;
+    transform: translateY(-3px);
+}

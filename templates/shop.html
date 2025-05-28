@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .list-container {
+            margin-top: 20px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .list-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e6f2ff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        ul li:hover {
+            background: #b3d9ff;
+        }
+        .cta {
+            background: #ff5733;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .payment-info {
+            background: #ffcc80;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop" class="active">Shop</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Admin Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Available Categories</h2>
+        <div class="shop-container">
+            <div class="category">
+                <img src="../static/images/medicine.jpg" alt="Medicines" style="height: 150px;">
+                <p>Medicines</p>
+            </div>
+            <div class="category">
+                <img src="../static/images/toys.jpg" alt="Toys" style="height: 150px;">
+                <p>Toys</p>
+            </div>
+            <div class="category">
+                <img src="../static/images/grooming.jpg" alt="Grooming" style="height: 150px;">
+                <p>Grooming</p>
+            </div>
+            <div class="category">
+                <img src="../static/images/pets.jpg" alt="Pets" style="height: 150px;">
+                <p>Pets</p>
+            </div>
+        </div>
+
+        <!-- Accessories List -->
+        <div class="list-container">
+            <div class="list-title">🐾 Available Accessories</div>
+            <ul>
+                <li>Pet Beds</li>
+                <li>Leashes and Collars</li>
+                <li>Food and Water Bowls</li>
+                <li>Chew Toys and Play Toys</li>
+                <li>Grooming Kits</li>
+                <li>Pet Clothing</li>
+                <li>Carriers and Travel Accessories</li>
+                <li>Pet Strollers</li>
+                <li>Training Pads & Litter Boxes</li>
+                <li>Automatic Feeders & Water Dispensers</li>
+                <li>Scratching Posts & Climbing Trees</li>
+                <li>Heated Pet Beds</li>
+            </ul>
+        </div>
+
+        <!-- Available Pets List -->
+        <div class="list-container">
+            <div class="list-title">🐶🐱🐦 Available Pets</div>
+            <ul>
+                <li><strong>Dogs:</strong> Labrador, Golden Retriever, German Shepherd, Pug, Husky, Beagle, Dalmatian, Boxer</li>
+                <li><strong>Cats:</strong> Persian, Siamese, Bengal, British Shorthair, Maine Coon, Scottish Fold, Ragdoll</li>
+                <li><strong>Birds:</strong> Parakeets, Cockatoos, Macaws, Lovebirds, Finches, Canaries, African Grey Parrots</li>
+                <li><strong>Small Mammals:</strong> Rabbits, Guinea Pigs, Hamsters, Ferrets, Chinchillas</li>
+                <li><strong>Fish:</strong> Goldfish, Betta Fish, Angelfish, Koi Fish, Guppies, Neon Tetras</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            🐾 Bring joy to your home! Adopt a loving pet or buy premium pet products today. 🐾
+        </div>
+
+        <!-- Payment Information -->
+        <div class="payment-info">
+            💳 Payment is currently offline and will be collected during delivery. Thank you for understanding!
+        </div>
+
+        <!-- Order Form -->
+        <form action="/shop" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="product" placeholder="adopt or buy an item" required>
+            <textarea name="address" placeholder="Delivery Address" required></textarea>
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+</body>
+</html>
